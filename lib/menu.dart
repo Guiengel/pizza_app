@@ -12,7 +12,27 @@ class Menu extends StatelessWidget {
           Card(
             child: Row(
               children: [
-                Image.asset("images/margherita.jpg"),
+                Image.asset("images/margherita.jpg", width: 100, height: 100,),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Margherita", style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        
+                      ),), 
+                      Text("Descrição", style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black87,
+                      ),),
+                      Text("Preço", style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black54,        
+                      ),),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

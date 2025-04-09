@@ -10,7 +10,7 @@ class Menu extends StatelessWidget {
       appBar: AppBar(title: Text("Pizza Menu"),),
       body: Column(
         children: [
-          menu_item()
+          MenuItem()
         ],
       ),
     );
